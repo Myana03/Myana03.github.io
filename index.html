@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Full Stack Developer Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --white: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header h2 {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #bdc3c7;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info span {
+            margin: 0 10px;
+        }
+
+        /* Content Sections */
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Summary Highlight */
+        .summary {
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h4 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list li {
+            background: #f0f2f5;
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border-left: 3px solid #ccc;
+        }
+        
+        /* Highlight specific skills based on the 70/30 split */
+        .skill-list li.frontend { border-left-color: var(--secondary-color); font-weight: 600; }
+        .skill-list li.backend { border-left-color: #e67e22; }
+
+        /* Experience Bullet Points */
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .job-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        ul.experience-list {
+            padding-left: 20px;
+        }
+
+        ul.experience-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Certifications */
+        .certs {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <h2>Senior Full Stack Developer (UI Specialist)</h2>
+            <div class="contact-info">
+                <span>📍 Farragut, TN</span>
+                <span>📧 email@example.com</span>
+                <span>📱 (555) 123-4567</span>
+                <span>🔗 linkedin.com/in/yourprofile</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <section>
+                <h3>Professional Summary</h3>
+                <div class="summary">
+                    Senior Full Stack Developer with 12+ years of experience building scalable, cloud-native enterprise web applications. <strong>Primary focus (70%) on UI Architecture using Angular and React</strong>, supported by robust <strong>backend expertise (30%) in Java/Spring Boot</strong>. Proven ability to translate complex business requirements into responsive interfaces while architecting the underlying microservices and cloud infrastructure (AWS/GCP) to support them.
+                </div>
+            </section>
+
+            <section>
+                <h3>Technical Expertise</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Frontend Architecture (70%)</h4>
+                        <ul class="skill-list">
+                            <li class="frontend">Angular (v2+) & RxJS</li>
+                            <li class="frontend">React.js & Redux</li>
+                            <li class="frontend">TypeScript / JavaScript (ES6+)</li>
+                            <li class="frontend">HTML5 / CSS3 / SCSS</li>
+                            <li class="frontend">Micro-frontends / Webpack</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend Support (30%)</h4>
+                        <ul class="skill-list">
+                            <li class="backend">Java 8-17 / Spring Boot</li>
+                            <li class="backend">RESTful API Design</li>
+                            <li class="backend">Microservices Architecture</li>
+                            <li class="backend">PostgreSQL / SQL Optimization</li>
+                            <li class="backend">Spring Security / OAuth2</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cloud & DevOps</h4>
+                        <ul class="skill-list">
+                            <li>Docker / Kubernetes (GKE/EKS)</li>
+                            <li>GCP & AWS (EC2, S3, Cloud Run)</li>
+                            <li>CI/CD (Jenkins, GitLab, Cloud Build)</li>
+                            <li>Terraform (IaC)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Professional Experience</h3>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Senior Full Stack Developer</span>
+                        <span class="job-date">2018 – Present</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li><strong>Frontend Architecture:</strong> Led the migration of legacy monoliths to <strong>Angular and React</strong> micro-frontends, improving page load times by 40% and enabling modular deployments.</li>
+                        <li><strong>Backend Integration:</strong> Utilized <strong>Java Spring Boot</strong> primarily to build high-performance BFF (Backend-for-Frontend) layers, ensuring APIs were optimized specifically for UI data consumption.</li>
+                        <li><strong>Cloud Scalability:</strong> Containerized applications using <strong>Docker</strong> and orchestrated deployments on <strong>Kubernetes</strong>, ensuring high availability for user-facing applications during peak traffic.</li>
+                        <li><strong>Data Handling:</strong> Designed efficient SQL queries and schemas in <strong>PostgreSQL</strong> to support complex real-time data visualization dashboards.</li>
+                        <li><strong>DevOps:</strong> Implemented CI/CD pipelines to automate <strong>frontend builds</strong> and testing, reducing release cycles from weeks to days.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Full Stack Developer</span>
+                        <span class="job-date">2014 – 2018</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed responsive, customer-centric web applications using <strong>Angular</strong>, collaborating closely with UX designers to ensure pixel-perfect implementation.</li>
+                        <li>Architected secure <strong>REST APIs</strong> using Java Spring Security to handle authentication and authorization for single-page applications (SPAs).</li>
+                        <li>Managed cloud infrastructure on <strong>AWS</strong> (EC2, S3), supporting UI-centric applications with secure identity management and scalable storage.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Certifications</h3>
+                <div class="certs">
+                    <span class="cert-badge">Microsoft Certified: Azure AI Engineer Associate</span>
+                    <span class="cert-badge">AWS Certified Solutions Architect Associate</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
